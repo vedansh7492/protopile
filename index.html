@@ -1,0 +1,61 @@
+<html><head>
+    <title>Project 78</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@291&amp;display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&amp;display=swap" rel="stylesheet">
+    </head>
+    
+    
+    <center>
+
+        <body>
+            <img id="photo" src="Family photo.jpg">
+            <br> <br>
+            <h4 id="family_member">My Family Book</h4>
+            <br> <br>
+            <button type="button" onclick="update();">Next</button>
+    
+        
+        
+            
+            
+            <script>
+            
+            var images = ["Family photo.jpg", "dad.jpg", "mom.jpg", "Brother.jpg", "Vedansh (2).jpg"];
+            var names = ["My Family Book", "Nidhi kant Tripathi, my Father", "Gudiya Tripathi, my Mother", "Harshit Tripathi, my Brother", "Vedansh Tripathi, that's me!"];
+        
+            var i = 0;
+            function update()
+            {
+                i++;
+                var num_of_family_member = 5;
+                if(i > num_of_family_member)
+                {
+                    i = 0;
+                }
+                var updated_image = images[i];
+                var updated_name = names[i];
+
+
+                document.getElementById("photo").src = updated_image;
+                document.getElementById("family_member").innerHTML = updated_name;
+                
+    
+    
+    
+    
+                
+                
+                
+            }
+            
+            </script>
+        
+
+    </center>
+    
+    
+    </body></html>
